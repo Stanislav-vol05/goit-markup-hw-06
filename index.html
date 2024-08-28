@@ -217,7 +217,7 @@
           <ul class="team-list">
             <li class="list-element">
               <img
-              srcset="./images/mark-mob-1x.jpg, ./"
+                srcset="./images/mark-mob-1x.jpg 1x, ./images/mark-mob-2x.jpg 2x"
                 src="./images/mark-guerrero.jpg"
                 alt="mark-guerrero"
                 width="264"
@@ -260,7 +260,7 @@
             </li>
             <li class="list-element">
               <img
-                srcset="./images/tom-mob-1x.jpg, ./"
+                srcset="./images/tom-mob-1x.jpg 1x, ./images/tom-mob-2x.jpg 2x"
                 src="./images/tom-ford.jpg"
                 alt="tom-ford"
                 width="264"
@@ -303,6 +303,7 @@
             </li>
             <li class="list-element">
               <img
+                srcset="./images/camila-mob-1x.jpg 1x, ./images/camila-mob-2x.jpg 2x"
                 src="./images/camila-garcia.jpg"
                 alt="camila-garcia"
                 width="264"
@@ -313,7 +314,7 @@
                 <p class="profession">Marketing</p>
                 <ul class="icon-team">
                   <li class="icon-list">
-                    <a href="#instagram" class="social-link">
+                    <a href="#instagram" class="social-link" target="_blank">
                       <svg class="social-icons" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -345,6 +346,7 @@
             </li>
             <li class="list-element">
               <img
+                srcset="./images/daniel-mob-1x.jpg 1x, ./images/daniel-mob-2x.jpg 2x"
                 src="./images/daniel-wilson.jpg"
                 alt="daniel-wilson"
                 width="264"
@@ -355,7 +357,7 @@
                 <p class="profession">UI Designer</p>
                 <ul class="icon-team">
                   <li class="icon-list">
-                    <a href="#instagram" class="social-link">
+                    <a href="#instagram" class="social-link" target="_blank">
                       <svg class="social-icons" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -398,12 +400,20 @@
           <ul class="portfolio-list">
             <li class="portfolio-element">
               <div class="portfolio-wrap">
+                <picture>
+                  <source
+                  srcset="./images/banking-mob-1x.jpg 1x, ./images/banking-mob-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  />
+                  
+
                 <img
                   src="./images/banking-app.jpg"
                   alt="banking-app"
                   width="360"
                   height="300"
                 />
+                </picture>
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -588,7 +598,7 @@
     </footer>
 
     <!-- Section footer/ -->
-    <div class="ghost" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="buttom-modal" data-modal-close>
           <svg class="close-img" width="8" height="8">
@@ -664,8 +674,10 @@
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
+              <span class="privacy-policy-text">
               I accept the terms and conditions of the
               <a class="privacy-policy" href="#">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button class="modal-button" type="submit">Send</button>

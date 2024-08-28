@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
