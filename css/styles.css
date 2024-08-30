@@ -814,7 +814,7 @@ a {
     color: #4d5ae5;
 }
 .privacy-policy-text {
-    width: 231px;
+  width: 231px;
 }
 .modal-button {
     display: block;
@@ -917,16 +917,14 @@ a {
       ),
       url(../images/office-people-tab-1x.jpg);
   }
-  @media screen and(-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
-    .button-section {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/office-people-tab-2x.jpg);
+  @media screen and (min-width: 768px) {
+  .button-section {
+    background-image: linear-gradient(
+    to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/office-people-tab-2x.jpg);
     }
   }
   .main-title {
@@ -1058,6 +1056,9 @@ a {
     width: 360px;
     min-height: 336px;
   }
+  .privacy-policy-text {
+   width: 338px;
+  }
   .modal.buttom-modal:hover,
   .buttom-modal:focus {
     border: none;
@@ -1130,9 +1131,7 @@ a {
     ),
     url(../images/people-office-descktop-1x.jpg);
 }
-@media screen and(-webkit-min-device-pixel-ratio: 2),
-  (min-resolution:2dppx),
-  (min-resolution: 192dpi) {
+@media screen and (min-width: 1158px) {
   .button-section {
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-descktop-2x.jpg);
   }
@@ -1183,52 +1182,52 @@ a {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  .team-list {
-    flex-wrap: nowrap;
-    gap: 24px
+.team-list {
+  flex-wrap: nowrap;
+  gap: 24px
   }
-  .name-team {
-    padding-top: 32px;
-    padding-bottom: 32px;
+.name-team {
+  padding-top: 32px;
+  padding-bottom: 32px;
   }
-  .section-portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.section-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
   }
-  .portfolio-list {
-    gap: 24px;
-    row-gap: 48px;
-  }
-  .card-portfolio {
-    width: 360px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-  .portfolio-element {
-    flex-basis: calc((100% - 48px) / 3);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .cover-text {
-    display: block;
-    position: absolute;
-    top: 0;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    background-color: #4d5ae5;
-    height: 100%;
-    left: 0;
-    padding: 40px 32px;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .portfolio-element:hover .cover-text {
-    transform: translate(0);
+.portfolio-list {
+  gap: 24px;
+  row-gap: 48px;
+}
+.card-portfolio {
+  width: 360px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.portfolio-element {
+  flex-basis: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cover-text {
+  display: block;
+  position: absolute;
+  top: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  height: 100%;
+  left: 0;
+  padding: 40px 32px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-element:hover .cover-text {
+  transform: translate(0);
 }
   .portfolio-element:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .page-footer {
@@ -1236,9 +1235,9 @@ a {
 }
 .footer-container {
   flex-wrap: nowrap;
-    width: 1158px;
-    height: 112px;
-    padding: 0 15px;
+  width: 1158px;
+  height: 112px;
+  padding: 0 15px;
 }
 .text-footer {
   margin-bottom: 0;
@@ -1256,9 +1255,31 @@ a {
   width: 453px;
   height: 80px;
 }
+.email-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: transparent;
+  outline: none;
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #404bbf;
+}
+.email-input::placeholder {
+  color: #fff;
+}
 .modal-input:focus,
 .modal-input:hover {
-    border-color: #4d5ae5;
+  border-color: #4d5ae5;
 }
 .modal-form {
   flex-wrap: nowrap;
@@ -1266,8 +1287,5 @@ a {
 .modal-input:focus + .modal-icon,
 .modal-input:hover + .modal-icon {
   fill: #4d5ae5;
-}
-.modal-textarea {
-  border-color: #4D5AE5;
 }
 }
