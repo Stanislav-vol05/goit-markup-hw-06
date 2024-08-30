@@ -1084,6 +1084,9 @@ a {
   .mobile-menu {
     display: none;
   }
+  .burger-btn {
+    display: none;
+  }
   .header-logo {
   margin-right: 76px;
   }
@@ -1288,4 +1291,11 @@ a {
 .modal-input:hover + .modal-icon {
   fill: #4d5ae5;
 }
+<<<<<<< HEAD
 }
+=======
+.modal-textarea {
+  border-color: #4D5AE5;
+}
+}
+>>>>>>> 1971e19641a2d49ca7818f624b3866cf62d79d37
