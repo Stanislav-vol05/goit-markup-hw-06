@@ -376,12 +376,13 @@ a {
   overflow: hidden;
 }
 .cover-text {
+  display: block
   position: absolute;
   top: 0;
-  background-color: #4d5ae5;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  background-color: #4d5ae5;
   height: 100%;
   width: 100%;
   padding: 40px 32px;
