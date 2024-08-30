@@ -1083,6 +1083,9 @@ a {
   .mobile-menu {
     display: none;
   }
+  .burger-btn {
+    display: none;
+  }
   .header-logo {
   margin-right: 76px;
   }
